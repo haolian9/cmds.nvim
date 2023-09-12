@@ -46,3 +46,8 @@ cmds.cast((function()
   return spell
 end)())
 ```
+
+
+## notes
+* i drew some inspirations from python's argparse
+* this repo used to be named as `cwdwizard`, that's why there are terms like cast, spell
