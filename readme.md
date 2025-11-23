@@ -1,24 +1,26 @@
 an interface to define usercmd and its completions
 
-
 ## design choices/limits/features
 * there will be only one positional argument
 * the flag pattern: '--{flag-flag}='
 * no abbrev for flags
 * no repeating flags
 * generate completions for flags and argument based on user-defined providers
-
+    * a provider can summon vim.fn.getcompletion to offer builtin `:h :command-completion`
 
 ## status
 * it is usable yet far from stable
 
+## prerequisites:
+* linux
+* neovim v0.11.*
+* haolian9/infra.nvim
 
 ## todo
 * the use of its API is too verbose, i am not happy with that.
 * expand expr: %:p:h, @a
 * honor the flag.required constraint
 * complete no duplicate items for arg
-* path complete
 * generate completefn for {flag,arg}.type={true,boolean}
 
 
